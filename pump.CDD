@@ -1,0 +1,15 @@
+[Pump]
+in: start stop 
+out: state 
+var: flow 
+state: Idle Pumping ON OFF 
+initial : Idle
+int: ON Pumping state!1 
+int: OFF Idle state!0 
+ext: Idle ON start?1 
+ext: Pumping OFF stop?1 
+Idle:00:00:00:00
+Pumping:00:00:00:00
+ON:00:00:00:00
+OFF:00:00:00:00
+flow:250

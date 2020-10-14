@@ -1,0 +1,18 @@
+[reservoir]
+in: q_in qp_in 
+out: level low_level 
+var: volume surface level alarm_level level 
+state: Idle vol_supp vol_pump level_comp 
+initial : Idle
+ext: Idle vol_supp q_in?250 
+ext: Idle vol_pump qp_in?200 
+int: vol_supp level_comp level!q_in + qp_in level!1 {compute;}
+int: vol_pump level_comp {compute_pump;}
+Idle:00:00:00:00
+vol_supp:00:00:10:00
+vol_pump:00:00:10:00
+level_comp:00:00:00:00
+volume:1000
+surface:1000
+alarm_level:0.5
+level:1.0

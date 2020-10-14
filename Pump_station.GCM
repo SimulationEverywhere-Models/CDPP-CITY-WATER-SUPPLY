@@ -1,0 +1,25 @@
+# Title:Pump_st
+# background:
+# cant units:2
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:0
+# 	location x:152
+# 	location y:74
+# 	name:Pump1
+# 	Filename:pump.GAM
+# 	export classpath:
+# 	  class:gui.representation.Circle
+# 	  radius:20
+# 	cant Initial params:0
+# 	Unit class:gui.model.unit.EditableAtomicModelUnit
+# 	Unique ID:1
+# 	location x:151
+# 	location y:165
+# 	name:Pump2
+# 	Filename:pump.GAM
+# 	export classpath:
+# 	  class:gui.representation.Circle
+# 	  radius:20
+# 	cant Initial params:0
+# cant ports:0
+# Cant Links:0

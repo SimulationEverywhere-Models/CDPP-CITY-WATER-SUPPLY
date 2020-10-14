@@ -1,0 +1,7 @@
+InputPort:reservoir,integer
+InputPort:level_in,integer
+InputPort:flow_in,integer
+OutputPort:flow_out,integer
+OutputPort:level_out,integer
+Model:Pump,,atomic,GGad,181,37
+Model:reservoir,,atomic,GGad,41,55

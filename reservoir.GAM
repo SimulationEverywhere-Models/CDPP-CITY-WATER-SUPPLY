@@ -1,0 +1,106 @@
+# Title:reservoir
+# background:
+# cant units:4
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:6
+# 	location x:186
+# 	location y:98
+# 	name:Idle
+# 	Atomic TL:00:00:00:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:7
+# 	location x:119
+# 	location y:198
+# 	name:vol_supp
+# 	Atomic TL:00:00:10:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:8
+# 	location x:283
+# 	location y:187
+# 	name:vol_pump
+# 	Atomic TL:00:00:10:00
+# 	Unit class:gui.model.unit.AtomicUnit
+# 	Unique ID:12
+# 	location x:205
+# 	location y:287
+# 	name:level_comp
+# 	Atomic TL:00:00:00:00
+# Cant Ports:4
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:0
+# 	Port ID:q_in
+# 	Port In/Out:In
+# 	Port Type:Float
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:1
+# 	Port ID:qp_in
+# 	Port In/Out:In
+# 	Port Type:Float
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:2
+# 	Port ID:level
+# 	Port In/Out:Out
+# 	Port Type:Float
+# 	Port Class:gui.model.port.AtomicPort
+# 	Port UniqueId:3
+# 	Port ID:low_level
+# 	Port In/Out:Out
+# 	Port Type:Integer
+# Cant Links:4
+# 			Link Type:gui.model.link.AtomicExternalLink
+# 			Link unique Id:9
+# 			start unit Point:6
+# 			end unit Point:7
+# 			cant Expressions:1
+# 			Expr Type:gui.model.Function
+# 			Expr:q_in
+# 			Value :250
+# 			cant Actions:0
+# 			Link Type:gui.model.link.AtomicExternalLink
+# 			Link unique Id:10
+# 			start unit Point:6
+# 			end unit Point:8
+# 			cant Expressions:1
+# 			Expr Type:gui.model.Function
+# 			Expr:qp_in
+# 			Value :200
+# 			cant Actions:0
+# 			Link Type:gui.model.link.AtomicInternalLink
+# 			Link unique Id:14
+# 			start unit Point:7
+# 			end unit Point:12
+# 			cant Expressions:2
+# 			Port Class:gui.model.port.AtomicPort
+# 			PortRef:2
+# 			Value :q_in + qp_in
+# 			Port Class:gui.model.port.AtomicPort
+# 			PortRef:2
+# 			Value :1
+# 			cant Actions:1
+# 			Action:compute
+# 			Action Id:15
+# 			Link Type:gui.model.link.AtomicInternalLink
+# 			Link unique Id:16
+# 			start unit Point:8
+# 			end unit Point:12
+# 			cant Expressions:0
+# 			cant Actions:1
+# 			Action:compute_pump
+# 			Action Id:18
+# Initial Name:6
+# Vars cant:5
+# 	varName:volume
+# 	varVal:1000
+# 	Var UniqueId:4
+# 	varName:surface
+# 	varVal:1000
+# 	Var UniqueId:5
+# 	varName:level
+# 	varVal:
+# 	Var UniqueId:11
+# 	varName:alarm_level
+# 	varVal:0.5
+# 	Var UniqueId:13
+# 	varName:level
+# 	varVal:1.0
+# 	Var UniqueId:19
